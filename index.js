@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
+const markdownpdf = require('markdown-pdf');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -14,7 +15,11 @@ rl.question('What is the filename? ', (filename) => {
             return;
         }
         let content = buffer.toString();
-        let upcased = content.toUpperCase();
-        console.log(upcased);
+        markdownpdf().from.string(content)
+                 .to(filename + '.pdf', () => {
+                     console.log('OMG IT WORKEDZED');
+                 })
+        // let upcased = content.toUpperCase();
+        // console.log(upcased);
     });
 });
