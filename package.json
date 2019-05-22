@@ -1,0 +1,20 @@
+{
+  "name": "markdown-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "open SpecRunner.html",
+    "e2e": "cypress run",
+    "start": "ws --port 9898"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.2.0",
+    "jasmine": "^3.4.0"
+  },
+  "dependencies": {
+    "local-web-server": "^2.6.1"
+  }
+}
