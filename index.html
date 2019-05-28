@@ -1,0 +1,28 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Markdown to HTML</title>
+        <link rel="icon" href="src/resources/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="src/index.css">
+        <script src="src/converter.js" async></script>
+        <script src="src/index.js" async></script>
+    </head>
+    <body>
+        <h1 class="conversion-header">Convert Markdown to HTML!</h1>
+        <div class="conversion-container">
+            <div class="markdown-container">
+                <label>Markdown:</label>
+                <textarea class="markdown-box"></textarea>
+            </div>
+            <div class="html-container">
+                <label>HTML:</label>
+                <textarea class="html-box" readonly></textarea>
+            </div>
+            <div data-role="converted-markdown"></div>
+        </div>
+    </body>
+</html>
